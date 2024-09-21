@@ -15,7 +15,9 @@ def show_main_menu():
       print('This option prints the list of items ordered, extended price, total, Taxes, and Grand total ')
     elif user_menu_choice in 'Nn':
       print('New order')
-      make_order(user_menu_choice.upper())  #calls a function for adding to the orders
+      make_order(user_menu_choice.upper()) 
+    else: 
+      print('Invalid option, choose either N, X, Q') #calls a function for adding to the orders
 
 def make_order(menu_choice):
   print('Functionality for menu choice ', menu_choice)
