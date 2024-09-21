@@ -25,7 +25,10 @@ def make_order(menu_choice):
   item_code, quantity = user_selection.split()
   print(functions.get_item_information(item_code))
   item_name, item_price = functions.get_item_information(item_code)
+  #using print statement for item descriptions
   print(f"Item Name: {item_name}, Quantity: {quantity}, Unit Item Price: {item_price}$")
+  # updating the items ordered
+  add_more_items = str(input("Want to add any other items y/n : "))
 
 def close_order(menu_choice):
   print('Functionality for menu choice ', menu_choice)
