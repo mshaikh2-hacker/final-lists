@@ -24,6 +24,8 @@ def make_order(menu_choice):
   user_selection = functions.get_item_number()
   item_code, quantity = user_selection.split()
   print(functions.get_item_information(item_code))
+  item_name, item_price = functions.get_item_information(item_code)
+  print(f"Item Name: {item_name}, Quantity: {quantity}, Unit Item Price: {item_price}$")
 
 def close_order(menu_choice):
   print('Functionality for menu choice ', menu_choice)
